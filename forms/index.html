@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Homework</title>
+</head>
+<body>
+    
+    <h1>Shopping Form </h1>
+
+ <form action="">
+    <fieldset>
+        <legend>Personal info</legend>
+            <label for="name">First Name: </label> <br />
+            <input type="text" name="name" id="name" required>
+<br /> <br />
+            <label for="lname">Last Name: </label>  <br />
+            <input type="text" name="lname" id="lname" required>
+<br /> <br />  
+            <label for="email">Email: </label> <br />
+            <input type="email" name="email" id="email" >
+ <br /> <br />
+            <label for="phone">Phone Number: </label> <br />
+            <input type="tel" name="phone" id="phone" required>
+    </fieldset>
+
+
+ <br /><br />
+
+    <fieldset>
+        <legend>Your Address</legend>
+            <label for="adress">Shipping Address: </label> <br />
+            <textarea name="adress" id="adress" cols="30" rows="10" required></textarea>
+ <br /><br />
+            <label for="billing">Billing Address: </label> <br />
+            <textarea name="billing" id="billing" cols="30" rows="10" required></textarea>
+    </fieldset>
+
+<br /><br />
+    <fieldset>
+        <legend>Delivery methods and Gifts</legend>
+             <label for="delivery">Delivery method: </label> <br />
+	         <select name="delivery" id="delivery" required>
+		        <option value="first" selected>Standard Delivery (4-7 business days)</option>
+		        <option value="second">Express Delivery (2-3 bussiness days)</option>
+	        </select>
+ <br /> <br /> <br />
+            <label for="gift">Gift Wrapping: </label>
+            <input type="checkbox" name="gift" id="gift">
+ <br /> <br />
+            <label for="gift-msg">Gift Message</label> <br />
+            <textarea name="gift-msg" id="gift-msg" cols="30" rows="10"></textarea>
+     </fieldset>
+
+
+<br /><br />
+
+    <fieldset>
+        <legend>Payment Methods</legend>
+            <label for="payment">Payment Method: </label> <br />
+            <select name="payment" id="payment" required>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="paypal">PayPal</option>
+             </select>
+<br><br>
+            <label for="cardNum">Credit Card Number: </label> <br>
+            <input type="number" name="cardNum" id="cardNum" maxlength="16" required>
+<br><br>
+            <label for="exDate">Expiration Date: </label> <br>
+            <input type="date" name="exDate" id="exDate" required>
+<br><br>
+            <label for="cvc">CVC: </label> <br>
+            <input type="number" name="" id=""  maxlength="3" required> <br><br>
+<br><br>
+            <label for="futurepayments">Save Payment Method for Order Updates: </label>
+            <input type="checkbox" name="futurepayments" id="futurepayments">
+<br><br>
+            <label for="contact">Preferred Conact Method for Order Updates: </label> <br>
+            <input type="radio" name="contact" value="email" id="email" />
+            <label for="rock">Email</label> <br>
+            <input type="radio" name="contact" value="phone" id="phone" />
+            <label for="pop">Phone</label> <br>
+            <input type="radio" name="contact" value="both" id="both" />
+            <label for="jazz">Both Email and Phone</label>
+    </fieldset>
+<br><br>
+        <label for="orderNotes">Order Notes:</label> <br>
+        <textarea name="orderNotes" id="orderNotes" cols="30" rows="10"></textarea>
+   
+<br><br><br>
+   
+	    <input type="reset" value="Cancel" />
+	    <input type="submit" value="Sumbit Order" />
+        
+	
+    </form>
+</body>
+</html>
